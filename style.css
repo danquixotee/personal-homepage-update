@@ -1,0 +1,192 @@
+/* Reset dasar untuk memastikan tampilan seragam di semua browser */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Memastikan footer selalu di bawah */
+}
+
+/* Gaya Header & Navigasi */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efek saat kursor diarahkan atau menu sedang aktif */
+nav a:hover, nav a.active {
+    background-color: white;
+    color: #0056b3;
+}
+
+/* Gaya Konten Utama */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    flex: 1; /* Mengisi ruang kosong */
+}
+
+h2, h3 {
+    color: #0056b3;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 2rem 0;
+}
+
+/* Gaya Khusus Galeri */
+.profile-card {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    border: 5px solid #0056b3;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+/* Gaya Khusus Blog */
+.blog-post {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.blog-post:last-child {
+    border-bottom: none;
+}
+
+.meta-info {
+    font-size: 0.85rem;
+    color: #666;
+    background-color: #f0f0f0;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+/* Gaya Formulir Kontak */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+.btn-container {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"] {
+    background-color: #0056b3;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #004494;
+}
+
+button[type="reset"] {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+button[type="reset"]:hover {
+    background-color: #ccc;
+}
+
+/* Gaya Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333;
+    color: white;
+}
